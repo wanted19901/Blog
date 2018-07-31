@@ -1,154 +1,231 @@
 /* --------------- reset.css --------------- */
-html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;                               /* обнуляем отступы и убираем бордюры */
-	vertical-align: baseline;          /* приводим все к одной базовой линии */
-	background: transparent;      /* чтобы не проскакивали левые фоны, установленные по умолчанию */
-	font-size: 100%;                     /* размер шрифта всем одинаковый */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0; /* обнуляем отступы и убираем бордюры */
+    vertical-align: baseline; /* приводим все к одной базовой линии */
+    background: transparent; /* чтобы не проскакивали левые фоны, установленные по умолчанию */
+    font-size: 100%; /* размер шрифта всем одинаковый */
 }
-a {                                      	     /* ссылка не в общем списке чтобы не сбрасывать outline по умолчанию */
-	margin:0;
-	padding:0;
-	font-size:100%;
-	vertical-align:baseline;
-	background:transparent;
-	outline:none;
+
+a { /* ссылка не в общем списке чтобы не сбрасывать outline по умолчанию */
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    outline: none;
 }
-table {						/* устраняем отступы между ячейками таблицы */
-	border-collapse: collapse; 
-	border-spacing: 0;
+
+table { /* устраняем отступы между ячейками таблицы */
+    border-collapse: collapse;
+    border-spacing: 0;
 }
+
 td, td img {
-	vertical-align: top;			/* возвращаем привычное вертикальное выравнивание */
-} 
+    vertical-align: top; /* возвращаем привычное вертикальное выравнивание */
+}
+
 input, select, button, textarea {
-	margin: 0; 				/* убираем отступы по умолчанию для элементов форм (в частности для checkbox и radio) */
-	font-size: 100%; 			/* делаем размер шрифтов везде одинаковым */
-	outline: none;
+    margin: 0; /* убираем отступы по умолчанию для элементов форм (в частности для checkbox и radio) */
+    font-size: 100%; /* делаем размер шрифтов везде одинаковым */
+    outline: none;
 }
+
 input[type="text"], input[type="password"], textarea {
-	padding: 0; 				/* убираем внутренние отступы для текстовых полей */
+    padding: 0; /* убираем внутренние отступы для текстовых полей */
 }
-input[type="checkbox"] { 		/* вертикальное выравнивание чекбоксов и радиобатонов относительно меток */
-	vertical-align: bottom;
+
+input[type="checkbox"] { /* вертикальное выравнивание чекбоксов и радиобатонов относительно меток */
+    vertical-align: bottom;
 }
+
 input[type="radio"] {
-	vertical-align: text-bottom;
+    vertical-align: text-bottom;
 }
+
 sub {
-	vertical-align: sub;
-	font-size: smaller;
+    vertical-align: sub;
+    font-size: smaller;
 }
+
 sup {
-	vertical-align: super;
-	font-size: smaller;
+    vertical-align: super;
+    font-size: smaller;
 }
+
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-	display:block;
+    display: block;
 }
+
 nav ul {
-	 list-style:none;
+    list-style: none;
 }
+
 /* --------------- /reset.css --------------- */
 
 /* --------------- базовые настройки ---------*/
 html {
-	min-height:100%; /* всегда показываем вертикальную полосу прокрутки  */
+    min-height: 100%; /* всегда показываем вертикальную полосу прокрутки  */
 }
-body {
-	color: #000;
-	text-align: left;
-	font-size: 1em; /* используем безопасные шрифтовые CSS стеки */
-	min-height:100%;
-	font-family: 'Open Sans', sans-serif;
-	color: #606060;
-}
-a, a:visited { /* порядок правил для ссылок имеет значение */
-	color: green;
-	text-decoration: underline;
-}
-a:hover {
-	color: #fdf208;
-	text-decoration:none;
-}
-a:focus, a:active {
-	color: #c83867;
-	text-decoration: underline;
-}
-h1, h2, h3, h4, h5, h6{
-	font-weight:normal;
-}
-img{
 
-	max-width:100%;
+body {
+    color: #000;
+    text-align: left;
+    font-size: 1em; /* используем безопасные шрифтовые CSS стеки */
+    min-height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    color: #606060;
 }
-.clr{
-	clear:both;
+
+a, a:visited { /* порядок правил для ссылок имеет значение */
+    color: green;
+    text-decoration: underline;
 }
+
+a:hover {
+    color: #fdf208;
+    text-decoration: none;
+}
+
+a:focus, a:active {
+    color: #c83867;
+    text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+img {
+
+    max-width: 100%;
+}
+
+.clr {
+    clear: both;
+}
+
 .clearfix:after {
     clear: both;
     content: "";
     display: table;
 }
+
 /* --------------- /базовые настройки ---------*/
-header{
-		background: #292929;
-		height: 125px;
-	overflow: hidden;
-	text-align: center;
+header {
+    background: #292929;
+    height: 125px;
+    overflow: hidden;
+    text-align: center;
 
 }
-.center-block-main{
-     max-width: 980px;
-	height: 125px;
- padding: auto;
-	margin: 0 auto;
+
+.center-block-main {
+    max-width: 980px;
+    height: 125px;
+    padding: auto;
+    margin: 0 auto;
 
 }
-.logo{
-	margin-top: 45px;
-	float: left;
+
+.logo {
+    margin-top: 45px;
+    float: left;
 }
-.manu{
-	float: right;
+
+.manu {
+    float: right;
 }
-.manu li{
-	float: left;
-	font-weight: 600;
+
+.manu li {
+    float: left;
+    font-weight: 600;
 }
-.manu li a{
-	color: #ffffff;
-	text-decoration: none;
-	padding: 50px 35px;
-	display: block;
-	border-bottom: 3px solid #292929;
+
+.manu li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 50px 35px;
+    display: block;
+    border-bottom: 3px solid #292929;
 
 }
-.manu li a:hover{
-	color: #58c93a;
-	border-bottom: 3px solid #58c93a;
+
+.manu li a:hover {
+    color: #58c93a;
+    border-bottom: 3px solid #58c93a;
 }
-main{
-	float: left;
-	width: 62.5%;
-	margin-top: 70px;
+
+main {
+    float: left;
+    width: 62.5%;
+    margin-top: 70px;
 }
-aside{
-	float: right;
-	width: 28.5%;
-	margin-top: 70px;
+
+aside {
+    overflow: hidden;
+    float: right;
+    width: 28.5%;
+    margin-top: 70px;
 }
-h1{
-	font: 28px "Open Sans" ; color:#4f4e4e; font-weight: bold;  text-transform: uppercase;
-	padding: 30px 0px 20px 10px;
+
+h1 {
+    font: 28px "Open Sans";
+    color: #4f4e4e;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 30px 0px 20px 10px;
 }
-p{
-	color: #6e6e6e;
-	padding: 0px 10px 20px 10px ;
+
+p {
+    color: #6e6e6e;
+    padding: 0px 10px 20px 10px;
 }
-button{
-	float: left;
+
+button {
+    float: left;
+
+}
+
+article {
+    padding-bottom: 73px;
+}
+
+article p a {
+    font: 16px "Open Sans";
+    font-weight: bold;
+    color: #c2c1c1;
+    text-decoration: none;
+    border: solid;
+    border-radius: 30px;
+
+}
+
+article p a:hover {
+    color: #;
+}
+
+aside article ul {
+
+    color: #ffffff;
+    text-decoration: none;
+    padding: 50px 35px;
+}
+
+aside h1 {
+    border-left: 3px solid #58c93a;
+    background: #f8f8f8;
+    width: auto;
+
+}
+
+aside input {
+    width: 100%;
+    padding: 10px 10px 10px 20px;
+    font: 12px "Open Sans";
+    text-align: center;
+    color: #d7d7d7;
 
 }
