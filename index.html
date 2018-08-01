@@ -53,31 +53,49 @@
         </article>
     </main>
     <aside>
-        <article>
-            <h1>Search</h1>
-            <form>  <input type="search" id="search" placeholder="What are you looking for?"/></form>
-        </article>
-        <article class="asideNav">
-            <h1> Categories</h1>
-            <ul class="manuAside">
-                <li><a href="#">Journal</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Contact</a></li>
+        <div class="widget">
+            <h2>Search</h2>
+            <form action="" method="get"><input type="search" class="search" placeholder="What are you looking for?">
+            </form>
+        </div>
+        <div class="widget">
+            <h2> Categories</h2>
+            <nav>
+                <ul>
+                    <li><a href="#">Journal</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Contact</a></li>
 
-            </ul>
-        </article>
-        <article>
-            <h1>Stay tuned.</h1>
-            <form>  <input type="text"  placeholder="Your Email" size="40"/></form>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="widget">
+
+            <h2>Stay tuned.</h2>
+            <div class="subscribe">
+                <form action="" method="get">
+                    <input type="email" placeholder="Your Email" class="subscribe-input">
+                    <input type="image" src="src/img/sbcr-btn.jpg" class="subscribe-img">
+                </form>
+            </div>
+
+        </div>
+        <div class="widget">
             <a href="/"> <img src="src/img/banner.jpg"> </a>
-        </article>
-
+        </div>
 
     </aside>
+    <div class="clr"></div>
+    <div class="pager clearfix">
+
+        <p class="previous-link"> &larr;<a href="/"> Previous </a></p>
+
+        <p class="next-link"> <a href="/"> Next </a>&rarr;</p>
 
 
-</div>
+    </div>
 
 
 </body>
